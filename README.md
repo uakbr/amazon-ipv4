@@ -24,9 +24,13 @@ print('# IPS', ips)
   
 * This is only possible because Amazon [publishes](https://ip-ranges.amazonaws.com/ip-ranges.json) their entire set of IP addresses as JSON.
 
-* Given this file, we download the JSON -> convert the CIDR blocks to individual IP #'s -> arrive at our grand total of: **109,847,486** IPV4 addresses owned by AWS! 
+* The script I wrote downloads the JSON file, converts the IPV4 CIDR block ranges to individual IP address amounts and then sums all ranges. Thus, we arrive at a grand total of: 
+
+    * **109,847,486** IPV4 addresses owned by AWS! [As of 13 December 2020]
 
 * Given that there are a total of **4,294,967,296** IPV4 addresses possible; this comes out to **2.55%** of all IPV4 addresses.
+
+* Just to showcase the *sheer magnitude* of how many more IPV6 addresses exist: there's a total of (2^128) addresses, allowing 3.4 x 10^38 unique IP addresses. This is equal to **340 trillion trillion trillion IPV6 addresses**. 
 
 The below data is provided by: [IPV4 Market](https://ipv4marketgroup.com/ipv4-pricing/)
 Disclaimer: I have not had the time to yet corroborate IPV4 Market's market data itself; I am not saying it is wrong but I would also seek multiple sources if possible.
